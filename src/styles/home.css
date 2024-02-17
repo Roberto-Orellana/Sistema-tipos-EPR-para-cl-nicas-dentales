@@ -1,0 +1,141 @@
+.btn-h {
+    height: 60px;
+}
+
+.btn-w {
+    width: 250px;
+}
+
+.modulo {
+    padding-top: 20%;
+}
+
+.container-home {
+    width: 80%;
+    display: flex;
+    background-color: rgb(171, 237, 186);
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 4px;
+    border: 1px solid #000000;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 28px;
+    gap: 2rem;
+}
+
+.containe-home-bton {
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background-color: rgb(132, 223, 153);
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 4px;
+    border: 1px solid #000000;
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    padding: 28px;
+    gap: 2rem;
+}
+
+
+.contador-pacientes {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    text-align: start;
+}
+
+.contador-pacientes h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contador-pacientes p {
+    font-size: 18px;
+    color: #7fbdff;
+}
+
+.cards-module:hover {
+    background-color: green;
+}
+
+.cards-module {
+    width: 8rem;
+    background-color: rgb(213, 255, 228);
+    text-align-last: center;
+    transition: background-color 0.75s;
+}
+
+.cards-module-body {
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+}
+
+.cards-module-title {
+    font-size: medium;
+}
+
+.tex {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+@media (max-width: 700px) {
+    .btn-h {
+        height: 45px;
+        margin: 30px !important;
+    }
+
+    .containe-home-bton {
+        grid-template-columns: auto;
+        /* Cambiamos a una sola columna */
+        grid-template-rows: auto;
+        /* Revertimos a tamaño automático */
+        padding: auto;
+    }
+
+    .cards-module {
+        width: 70%;
+        /* Ocupar todo el ancho disponible */
+        margin-bottom: 10px;
+        /* Espacio entre botones */
+        border-radius: 5px;
+    }
+
+    .cards-module-title {
+        font-size: small;
+    }
+
+    .contador-pacientes h2 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .contador-pacientes p {
+        font-size: 16px;
+    }
+
+    /* Reducción del tamaño de los iconos */
+    .icon {
+        font-size: 1.5rem;
+    }
+
+    /* Reducción del tamaño del contenedor */
+    .container-home {
+        width: 95%;
+    }
+
+    .container-home-bton {
+        width: 95%;
+    }
+
+}

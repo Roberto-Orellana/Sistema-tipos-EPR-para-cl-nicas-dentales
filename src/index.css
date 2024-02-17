@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+
+body {
+	margin: 0 auto;
+	font-family: sans-serif;
+	background-color: #F9FBEB;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+	font-family: sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+form {
+	max-width: 500px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+
+/* Style para le navbar general */
+.logo {
+	height: 45px;
+	width: 45px;
+	padding-top: 3px;
+}
+
+/* .colorGeneral {
+	background-color: #38F5B9 !important
+} */
+
+
+@media (max-width: 720px) {
+	.NavOculto span {
+		display: none;
+	}
+
+	.logo {
+		font-size: 40px !important;
+		padding-top: 3px;
+	}
+
+}

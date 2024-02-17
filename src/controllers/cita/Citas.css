@@ -1,0 +1,115 @@
+* {}
+
+.lista-citas {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-citas li {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+
+.recordatorio-mensaje {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+
+.citas-container {
+    display: block;
+    max-width: 800px;
+    margin: 25px;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 6px;
+    padding: 1rem;
+    background-color: rgb(132, 223, 153);
+}
+
+.paciente-container {
+    display: block;
+    max-width: 700px;
+    margin: 25px;
+    padding: 1rem;
+    background-color: rgb(132, 223, 153);
+}
+
+.citaAdd-container {
+    background-color: rgb(205, 253, 216);
+    display: block;
+    block-size: 10%;
+    gap: 1rem;
+
+}
+
+.icon-button-pend {
+    color: #c7bb13
+}
+
+.icon-button-compl {
+    color: #13c749
+}
+
+.icon-button-canc {
+    color: #c71313;
+}
+
+
+.icon-button {
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    text-align: center;
+    font-size: 22px;
+    align-items: center;
+}
+
+.icon-button-pend:hover,
+.icon-button-compl:hover,
+.icon-button-canc:hover {
+    color: #ff7f50;
+}
+
+
+@media (max-width: 650px) {
+    .table thead {
+        display: none;
+    }
+
+    th {
+        display: none;
+    }
+
+    td {
+        display: grid;
+        gap: 0.5rem;
+        grid-template-columns: 15ch auto;
+        padding: 0.5rem 1rem;
+    }
+
+    td:first-child {
+        padding-top: 2rem;
+    }
+
+    td:last-child {
+        padding-bottom: 2rem;
+    }
+
+    td::before {
+        content: attr(data-cell) ": ";
+        font-weight: 700;
+        text-transform: capitalize;
+        font-size: small;
+    }
+
+}

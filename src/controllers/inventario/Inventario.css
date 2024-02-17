@@ -1,0 +1,75 @@
+.inventario-container{
+    display: block;
+    max-width: 800px;
+    margin: 25px;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 6px;
+    padding: 1rem;
+    background-color: rgb(132, 223, 153);
+}
+
+.paciente-container {
+    display: block;
+    max-width: 700px;
+    margin: 25px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 6px;
+    padding: 1rem;
+    background-color: rgb(132, 223, 153);
+    font-size: 12px;
+}
+
+
+.inventario-container-bton{
+    max-width: 800px;
+    margin: 25px;
+    margin-left: 25%;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 6px;
+    background-color: rgb(132, 223, 153);
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.cantidad-baja td{
+    color:aliceblue;
+    background-color: rgb(233, 54, 54);
+    font: sans-serif;
+    font-style: oblique;
+
+
+}
+
+.cards-module{
+    margin-left: 25%;
+}
+
+@media (max-width: 700px) {
+    .inventario-container{
+        max-width: 600px;
+        margin: 0;
+    }
+
+    .inventario-container-bton {
+        margin: 0;
+        grid-template-columns: auto;
+        /* Cambiamos a una sola columna */
+        grid-template-rows: auto;
+        /* Revertimos a tamaño automático */
+        padding: auto;
+    }
+    .cards-module{
+        margin-left: 15%;
+    }
+
+}

@@ -1,0 +1,230 @@
+/* Estilos para lista de proveedores */
+@media (min-width: 1200px) {
+    .table {
+        max-width: 80% !important;
+    }
+
+    .agregar {
+        margin-right: 10% !important;
+    }
+
+    .atras {
+        margin-left: 10% !important;
+    }
+
+    .cursor:hover {
+        cursor: pointer;
+    }
+}
+
+table th {
+    background-color: #198754 !important;
+    border: none;
+    color: white !important;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Estilos para resaltar los campos de entrada con errores */
+/* input:invalid {
+    border: 1px solid red;
+} */
+
+/* Estilos para el botón cuando el formulario no es válido */
+button:disabled {
+    background-color: lightgray;
+    color: gray;
+    cursor: not-allowed;
+}
+
+small {
+    color: rgb(58, 80, 64);
+}
+
+@media (max-width: 700px) {
+    .table {
+        font-size: 12px !important;
+    }
+
+    button {
+        font-size: 12px !important;
+    }
+
+    .agregar {
+        font-size: 2.5rem !important;
+    }
+
+    .atras {
+        font-size: 2.5rem !important;
+    }
+}
+
+.container {
+    max-width: 80% !important;
+}
+
+.linkDetalles {
+    color: black;
+    font-size: 1.5rem;
+}
+
+/* Estilos para los detalles de los provedores */
+
+.inputs {
+    padding: 5px;
+    margin: .75rem;
+}
+
+.addForm {
+    align-content: center;
+    background-color: #4bc48b;
+    padding: 5%;
+    font-size: medium;
+}
+
+.inputs-btn {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-inline: 40%;
+    font-size: medium;
+
+}
+
+.btn-form {
+    align-items: center;
+    background-color: #87ddb5;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    font-size: medium;
+}
+
+@media screen and (max-width: 1200px) {
+    .eliminar {
+        margin-right: 10% !important;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .eliminar,
+    .editar,
+    .agregar {
+        font-size: 2.5rem !important;
+    }
+
+    .edit {
+        display: flex !important;
+        margin-left: none;
+        margin-right: 5% !important;
+    }
+
+    .atras {
+        margin-left: 5% !important;
+    }
+
+    .agregar {
+        margin-right: 5% !important;
+    }
+
+    .infoProveedor {
+        max-width: 100px;
+        border-radius: 0px;
+        background: #1987541d;
+        box-shadow: 5px 5px 15px #d3d3d375,
+            -5px -5px 15px #ededed72;
+    }
+}
+
+.infoProveedor {
+    max-width: 500px;
+    padding: 5rem;
+    display: inline-block;
+    margin-left: 200px;
+
+    border-radius: 0px;
+    background: #1987541d;
+    box-shadow: 5px 5px 15px #d3d3d375,
+        -5px -5px 15px #ededed72;
+}
+
+.atras:hover,
+.agregar:hover,
+.editar:hover {
+    color: rgb(73, 92, 153);
+}
+
+.atras,
+.agregar,
+.editar {
+    transition: color 0.5s;
+    font-size: 3rem;
+    color: #198754;
+}
+
+.eliminar:hover {
+    color: #520000;
+}
+
+.eliminar {
+    transition: color 0.5s;
+    font-size: 3rem;
+    color: #ce0c0c;
+}
+
+
+.edit {
+    display: flex !important;
+    margin-right: 10%;
+}
+
+
+/* Estilos para agregar un proveedor */
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    /* Ajusta el margen superior según tus necesidades */
+}
+
+.pagination {
+    display: flex;
+    gap: 10px;
+    /* Espacio entre elementos */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pagination .page-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    /* Ancho de cada elemento de paginación */
+    height: 30px;
+    /* Alto de cada elemento de paginación */
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pagination .page-item.active {
+    background-color: #007bff;
+    /* Color de fondo cuando está activo */
+    color: #12c769;
+    /* Color de texto cuando está activo */
+}
+
+.pagination .page-item:hover {
+    background-color: #8b1818;
+    /* Color de fondo al pasar el ratón por encima */
+}
